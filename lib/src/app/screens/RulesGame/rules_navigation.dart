@@ -29,10 +29,9 @@ class _RuleNavigationState extends State<RuleNavigation> {
         children: <Widget>[
           CarouselSlider(
             options: CarouselOptions(
-              height: MediaQuery.of(context).size.height,
+              height: MediaQuery.of(context).size.height * 0.922,
               autoPlayCurve: Curves.fastOutSlowIn,
               viewportFraction: 1,
-              aspectRatio: 2.0,
               onPageChanged: (index, reason) {
                 setState(() {
                   _currentIndex = index;
@@ -42,6 +41,8 @@ class _RuleNavigationState extends State<RuleNavigation> {
             items: cardList.map((card) {
               return Builder(builder: (BuildContext context) {
                 return Card(
+                  elevation: 0,
+                  shadowColor: Colors.white,
                   child: card,
                 );
               });
