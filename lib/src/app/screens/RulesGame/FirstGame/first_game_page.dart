@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:slide_to_confirm/slide_to_confirm.dart';
 import 'package:squid_game_flutter/src/app/screens/RulesGame/components/apresentacao_card.dart';
 import 'package:squid_game_flutter/src/app/screens/RulesGame/components/card_rules.dart';
 
