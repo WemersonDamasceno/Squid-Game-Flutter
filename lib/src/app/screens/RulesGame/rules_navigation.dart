@@ -1,6 +1,7 @@
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 import 'package:squid_game_flutter/src/app/screens/RulesGame/FirstGame/first_game_page.dart';
+import 'package:squid_game_flutter/src/app/screens/RulesGame/SecondGame/second_game_page.dart';
 
 class RuleNavigation extends StatefulWidget {
   const RuleNavigation({Key? key}) : super(key: key);
@@ -12,7 +13,11 @@ class RuleNavigation extends StatefulWidget {
 class _RuleNavigationState extends State<RuleNavigation> {
   int _currentIndex = 0;
 
-  List cardList = [FirstGame(), FirstGame(), FirstGame()];
+  List cardList = [
+    FirstGame(),
+    SecondGame(),
+    FirstGame(),
+  ];
 
   List<T> map<T>(List list, Function handler) {
     List<T> result = [];

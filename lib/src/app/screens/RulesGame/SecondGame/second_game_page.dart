@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:squid_game_flutter/src/app/screens/RulesGame/FirstGame/widgets/apresentacao_first.dart';
 import 'package:squid_game_flutter/src/app/screens/RulesGame/components/card_rules.dart';
 
-class FirstGame extends StatelessWidget {
-  const FirstGame({Key? key}) : super(key: key);
+import 'widgets/apresentacao_second.dart';
+
+class SecondGame extends StatelessWidget {
+  const SecondGame({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -25,10 +26,10 @@ class FirstGame extends StatelessWidget {
             child: Column(
               children: const [
                 Text(
-                  "Your First Game",
+                  "Your Second Game",
                   style: TextStyle(fontSize: 20, color: Colors.white),
                 ),
-                ApresentacaoCard(),
+                ApresentacaoSecondCard(),
               ],
             ),
           ),
@@ -60,21 +61,21 @@ class FirstGame extends StatelessWidget {
                         child: const Text("How to play:"),
                       ),
                       CardRules(
-                          imageAsset: "assets/images/semaforo_green.png",
-                          backgroundCard: Colors.green.shade50,
+                          imageAsset: "assets/images/bola_forma.png",
+                          backgroundCard: Colors.grey.shade50,
                           messageCard:
-                              "When the light is green, all players can move."),
+                              "Each player receives a candy in a different form."),
                       CardRules(
-                        imageAsset: "assets/images/semaforo_red.png",
-                        backgroundCard: Colors.red.shade50,
-                        messageCard:
-                            "When the light is green, all players must be still",
-                      ),
-                      CardRules(
-                        imageAsset: "assets/images/semaforo_close.png",
+                        imageAsset: "assets/images/triangulo_forma.png",
                         backgroundCard: Colors.grey.shade50,
                         messageCard:
-                            "If a player moves during the red light, he will be eliminated.",
+                            "The player must remove the shape from its respective mold using a pin.",
+                      ),
+                      CardRules(
+                        imageAsset: "assets/images/quadrado_forma.png",
+                        backgroundCard: Colors.red.shade50,
+                        messageCard:
+                            "The player who breaks his form will be eliminated.",
                       ),
                     ],
                   ),

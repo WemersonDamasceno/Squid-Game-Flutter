@@ -26,6 +26,7 @@ class CardRules extends StatelessWidget {
             child: Row(children: [
               Image.asset(
                 imageAsset,
+                width: MediaQuery.of(context).size.width * 0.09,
               ),
               Padding(
                 padding: const EdgeInsets.all(8.0),
