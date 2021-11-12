@@ -33,7 +33,7 @@ class _SplashPageState extends State<SplashPage> {
         child: Container(
           decoration: const BoxDecoration(
             image: DecorationImage(
-              image: AssetImage("../assets/images/triangulo.png"),
+              image: AssetImage("assets/images/triangulo.png"),
             ),
           ),
           width: double.infinity,
@@ -44,7 +44,7 @@ class _SplashPageState extends State<SplashPage> {
               Column(
                 children: [
                   Image.asset(
-                    "../assets/images/logo.png",
+                    "assets/images/logo.png",
                     height: 200,
                   ),
                 ],
@@ -52,7 +52,7 @@ class _SplashPageState extends State<SplashPage> {
               Column(
                 children: [
                   Image.asset(
-                    "../assets/images/soldado.png",
+                    "assets/images/soldado.png",
                   ),
                 ],
               ),

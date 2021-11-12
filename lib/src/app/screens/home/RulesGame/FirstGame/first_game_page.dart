@@ -15,7 +15,7 @@ class FirstGame extends StatelessWidget {
             image: DecorationImage(
               fit: BoxFit.fill,
               image: AssetImage(
-                "../assets/images/fundo_home.png",
+                "assets/images/fundo_home.png",
               ),
             ),
           ),
@@ -76,6 +76,14 @@ class FirstGame extends StatelessWidget {
                         backgroundCard: Colors.grey.shade50,
                         messageCard:
                             "If a player moves during the red light, he will be eliminated.",
+                      ),
+                      Padding(
+                        padding: EdgeInsets.only(
+                            top: MediaQuery.of(context).size.height * 0.1),
+                        child: Image.asset(
+                          "assets/images/swap.png",
+                          color: Colors.red,
+                        ),
                       ),
                     ],
                   ),

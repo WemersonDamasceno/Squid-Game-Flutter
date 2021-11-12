@@ -15,7 +15,7 @@ class ThirdGame extends StatelessWidget {
             image: DecorationImage(
               fit: BoxFit.fill,
               image: AssetImage(
-                "../assets/images/fundo_home.png",
+                "assets/images/fundo_home.png",
               ),
             ),
           ),
@@ -75,6 +75,14 @@ class ThirdGame extends StatelessWidget {
                         imageAsset: "assets/images/quadrado_forma.png",
                         backgroundCard: Colors.red.shade50,
                         messageCard: "The team that loses will be  eliminated.",
+                      ),
+                      Padding(
+                        padding: EdgeInsets.only(
+                            top: MediaQuery.of(context).size.height * 0.1),
+                        child: Image.asset(
+                          "assets/images/swap.png",
+                          color: Colors.red,
+                        ),
                       ),
                     ],
                   ),

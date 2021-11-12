@@ -15,7 +15,7 @@ class SecondGame extends StatelessWidget {
             image: DecorationImage(
               fit: BoxFit.fill,
               image: AssetImage(
-                "../assets/images/fundo_home.png",
+                "assets/images/fundo_home.png",
               ),
             ),
           ),
@@ -76,6 +76,14 @@ class SecondGame extends StatelessWidget {
                         backgroundCard: Colors.red.shade50,
                         messageCard:
                             "The player who breaks his form will be eliminated.",
+                      ),
+                      Padding(
+                        padding: EdgeInsets.only(
+                            top: MediaQuery.of(context).size.height * 0.1),
+                        child: Image.asset(
+                          "assets/images/swap.png",
+                          color: Colors.red,
+                        ),
                       ),
                     ],
                   ),

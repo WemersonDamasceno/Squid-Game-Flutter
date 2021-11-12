@@ -45,10 +45,10 @@ class ApresentacaoThirdCard extends StatelessWidget {
             ),
           ),
           Positioned(
-            top: -MediaQuery.of(context).size.height * 0.075,
+            top: -MediaQuery.of(context).size.height * 0.072,
             left: MediaQuery.of(context).size.height * 0.12,
             child: Image.asset(
-              "../assets/images/third_game.png",
+              "assets/images/third_game.png",
               height: MediaQuery.of(context).size.height * 0.20,
             ),
           ),

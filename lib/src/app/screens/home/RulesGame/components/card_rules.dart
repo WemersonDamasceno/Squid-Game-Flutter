@@ -18,7 +18,7 @@ class CardRules extends StatelessWidget {
       padding: const EdgeInsets.only(top: 8.0),
       child: SizedBox(
         height: 80,
-        width: MediaQuery.of(context).size.width * 0.8,
+        width: MediaQuery.of(context).size.width * 0.9,
         child: Card(
           color: backgroundCard,
           child: Padding(

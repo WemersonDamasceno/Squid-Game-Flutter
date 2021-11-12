@@ -38,7 +38,7 @@ class _RuleNavigationState extends State<RuleNavigation> {
             options: CarouselOptions(
               height: MediaQuery.of(context).size.height * 0.922,
               autoPlayCurve: Curves.fastOutSlowIn,
-              viewportFraction: 1,
+              viewportFraction: 1.1,
               onPageChanged: (index, reason) {
                 setState(() {
                   _currentIndex = index;

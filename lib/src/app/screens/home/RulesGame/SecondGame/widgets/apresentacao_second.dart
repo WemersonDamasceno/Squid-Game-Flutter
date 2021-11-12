@@ -45,11 +45,11 @@ class ApresentacaoSecondCard extends StatelessWidget {
             ),
           ),
           Positioned(
-            top: -MediaQuery.of(context).size.height * 0.075,
-            left: MediaQuery.of(context).size.height * 0.17,
+            top: -MediaQuery.of(context).size.height * 0.062,
+            left: MediaQuery.of(context).size.height * 0.16,
             child: Image.asset(
-              "../assets/images/second_game.png",
-              height: MediaQuery.of(context).size.height * 0.20,
+              "assets/images/second_game.png",
+              height: MediaQuery.of(context).size.height * 0.19,
             ),
           ),
         ],

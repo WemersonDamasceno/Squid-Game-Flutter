@@ -57,9 +57,9 @@ class ApresentacaoCard extends StatelessWidget {
             ),
           ),
           Positioned(
-            top: -MediaQuery.of(context).size.height * 0.11,
+            top: -MediaQuery.of(context).size.height * 0.108,
             child: Image.asset(
-              "../assets/images/first_game.png",
+              "assets/images/first_game.png",
               height: MediaQuery.of(context).size.height * 0.25,
             ),
           ),
