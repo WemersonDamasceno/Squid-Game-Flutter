@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:squid_game_flutter/src/app/screens/RulesGame/FirstGame/widgets/apresentacao_first.dart';
-import 'package:squid_game_flutter/src/app/screens/RulesGame/components/card_rules.dart';
+import 'package:squid_game_flutter/src/app/screens/home/RulesGame/components/card_rules.dart';
 
-class FirstGame extends StatelessWidget {
-  const FirstGame({Key? key}) : super(key: key);
+import 'widgets/apresentacao_third.dart';
+
+class ThirdGame extends StatelessWidget {
+  const ThirdGame({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -25,10 +26,10 @@ class FirstGame extends StatelessWidget {
             child: Column(
               children: const [
                 Text(
-                  "Your First Game",
+                  "Your Third Game",
                   style: TextStyle(fontSize: 20, color: Colors.white),
                 ),
-                ApresentacaoCard(),
+                ApresentacaoThirdCard(),
               ],
             ),
           ),
@@ -60,21 +61,20 @@ class FirstGame extends StatelessWidget {
                         child: const Text("How to play:"),
                       ),
                       CardRules(
-                          imageAsset: "assets/images/semaforo_green.png",
-                          backgroundCard: Colors.green.shade50,
+                          imageAsset: "assets/images/bola_forma.png",
+                          backgroundCard: Colors.grey.shade50,
                           messageCard:
-                              "When the light is green, all players can move."),
+                              "Players are divided into two teams of 10 players each."),
                       CardRules(
-                        imageAsset: "assets/images/semaforo_red.png",
-                        backgroundCard: Colors.red.shade50,
-                        messageCard:
-                            "When the light is green, all players must be still",
-                      ),
-                      CardRules(
-                        imageAsset: "assets/images/semaforo_close.png",
+                        imageAsset: "assets/images/triangulo_forma.png",
                         backgroundCard: Colors.grey.shade50,
                         messageCard:
-                            "If a player moves during the red light, he will be eliminated.",
+                            "Players must pull the rope hard to take down the rival team.",
+                      ),
+                      CardRules(
+                        imageAsset: "assets/images/quadrado_forma.png",
+                        backgroundCard: Colors.red.shade50,
+                        messageCard: "The team that loses will be  eliminated.",
                       ),
                     ],
                   ),

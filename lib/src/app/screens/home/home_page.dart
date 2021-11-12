@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:squid_game_flutter/src/app/screens/RulesGame/rules_navigation.dart';
+
+import 'RulesGame/rules_navigation.dart';
 
 class Home extends StatefulWidget {
   const Home({Key? key}) : super(key: key);

@@ -26,14 +26,14 @@ class ApresentacaoThirdCard extends StatelessWidget {
                     child: Column(
                       children: const [
                         Text(
-                          "Tug of",
+                          "Tug",
                           style: TextStyle(
                             color: Color(0xff0b0b0b),
                             fontSize: 26,
                           ),
                         ),
                         Text(
-                          "War",
+                          "Of War",
                           style:
                               TextStyle(fontSize: 23, color: Colors.deepOrange),
                         ),

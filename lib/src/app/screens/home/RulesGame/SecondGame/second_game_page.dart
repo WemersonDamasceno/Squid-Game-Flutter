@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:squid_game_flutter/src/app/screens/RulesGame/components/card_rules.dart';
+import 'package:squid_game_flutter/src/app/screens/home/RulesGame/components/card_rules.dart';
 
 import 'widgets/apresentacao_second.dart';
 
