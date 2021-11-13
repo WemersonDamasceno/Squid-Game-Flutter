@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:squid_game_flutter/src/app/core/colors.dart';
 import 'package:squid_game_flutter/src/app/screens/home/RulesGame/components/card_rules.dart';
 
 import 'widgets/apresentacao_second.dart';
@@ -80,10 +81,8 @@ class SecondGame extends StatelessWidget {
                       Padding(
                         padding: EdgeInsets.only(
                             top: MediaQuery.of(context).size.height * 0.1),
-                        child: Image.asset(
-                          "assets/images/swap.png",
-                          color: Colors.red,
-                        ),
+                        child: Image.asset("assets/images/swap.png",
+                            color: RoundColor.primary),
                       ),
                     ],
                   ),

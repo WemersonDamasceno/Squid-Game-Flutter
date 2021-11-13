@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:squid_game_flutter/src/app/core/colors.dart';
 
 import 'RulesGame/rules_navigation.dart';
+import 'Shop/shop_intro.dart';
 
 class Home extends StatefulWidget {
   const Home({Key? key}) : super(key: key);
@@ -16,10 +18,7 @@ class _HomeState extends State<Home> {
       TextStyle(fontSize: 30, fontWeight: FontWeight.bold);
   static const List<Widget> _widgetOptions = <Widget>[
     RuleNavigation(),
-    Text(
-      'Index 1: Business',
-      style: optionStyle,
-    ),
+    ShopIntro(),
     Text(
       'Index 2: School',
       style: optionStyle,
@@ -59,7 +58,7 @@ class _HomeState extends State<Home> {
           ),
         ],
         currentIndex: _selectedIndex,
-        selectedItemColor: Colors.red.shade800,
+        selectedItemColor: RoundColor.primary,
         onTap: _onItemTapped,
       ),
     );

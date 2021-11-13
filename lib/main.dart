@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:squid_game_flutter/src/app/core/colors.dart';
 import 'package:squid_game_flutter/src/app/screens/home/home_page.dart';
 import 'package:squid_game_flutter/src/app/screens/splash/splash_page.dart';
 
@@ -12,12 +13,10 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        fontFamily: 'Andada SC',
-        primarySwatch: Colors.blue,
-      ),
+      debugShowCheckedModeBanner: true,
+      title: 'Squid Game',
+      theme:
+          ThemeData(fontFamily: 'Andada SC', primarySwatch: RoundColor.primary),
       home: const SplashPage(),
       initialRoute: '/',
       routes: {

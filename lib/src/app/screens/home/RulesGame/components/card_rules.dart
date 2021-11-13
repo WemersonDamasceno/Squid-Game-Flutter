@@ -20,6 +20,8 @@ class CardRules extends StatelessWidget {
         height: 80,
         width: MediaQuery.of(context).size.width * 0.9,
         child: Card(
+          shadowColor: Colors.black,
+          elevation: 10,
           color: backgroundCard,
           child: Padding(
             padding: const EdgeInsets.all(8.0),
@@ -33,7 +35,9 @@ class CardRules extends StatelessWidget {
                 child: SizedBox(
                   width: MediaQuery.of(context).size.width * 0.61,
                   height: 50,
-                  child: Text(messageCard),
+                  child: Text(
+                    messageCard,
+                  ),
                 ),
               )
             ]),
