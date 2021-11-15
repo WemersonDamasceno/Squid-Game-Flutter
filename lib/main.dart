@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:squid_game_flutter/src/app/core/colors.dart';
+import 'package:squid_game_flutter/src/app/screens/home/Shop/home/home_shop_page.dart';
 import 'package:squid_game_flutter/src/app/screens/home/home_page.dart';
 import 'package:squid_game_flutter/src/app/screens/splash/splash_page.dart';
 
@@ -22,6 +23,7 @@ class MyApp extends StatelessWidget {
       routes: {
         '/splash': (context) => const SplashPage(),
         '/home': (context) => const Home(),
+        '/homeShop': (context) => const HomeShopPage(),
       },
     );
   }

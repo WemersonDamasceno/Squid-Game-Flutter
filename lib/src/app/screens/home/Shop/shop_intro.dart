@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:squid_game_flutter/src/app/screens/home/Shop/home/home_shop_page.dart';
 
 class ShopIntro extends StatelessWidget {
   const ShopIntro({Key? key}) : super(key: key);
@@ -37,9 +38,12 @@ class ShopIntro extends StatelessWidget {
                     child: Padding(
                       padding: const EdgeInsets.all(8.0),
                       child: Column(children: [
-                        Image.asset(
-                          "assets/images/logo.png",
-                          width: 160,
+                        Hero(
+                          tag: 'intro',
+                          child: Image.asset(
+                            "assets/images/logo.png",
+                            width: 160,
+                          ),
                         ),
                         SizedBox(
                           width: MediaQuery.of(context).size.width * 0.61,
@@ -54,7 +58,12 @@ class ShopIntro extends StatelessWidget {
                           child: SizedBox(
                             width: MediaQuery.of(context).size.width,
                             child: ElevatedButton(
-                              onPressed: () {},
+                              onPressed: () {
+                                Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                        builder: (_) => const HomeShopPage()));
+                              },
                               style: ElevatedButton.styleFrom(
                                   shape: RoundedRectangleBorder(
                                 borderRadius: BorderRadius.circular(15),
