@@ -5,7 +5,7 @@
 
 
   <p align="center">
-    <a href="https://www.figma.com/file/Kjh78QgmMuaB4GPKL0CmoJ/Squid-Game-UI-(Community)">Design de referência</a>
+    <a href="https://www.figma.com/community/file/1032691689021811781">Design de referência</a>
   </p>
 
 </p>
