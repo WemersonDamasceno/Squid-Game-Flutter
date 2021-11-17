@@ -5,6 +5,7 @@ class ShopIntro extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    var size = MediaQuery.of(context).size;
     return Column(children: [
       Container(
         color: const Color(0xFF191919),
@@ -17,16 +18,16 @@ class ShopIntro extends StatelessWidget {
               ),
             ),
           ),
-          width: MediaQuery.of(context).size.width,
-          height: MediaQuery.of(context).size.height * 0.92,
+          width: size.width,
+          height: size.height * 0.92,
           child: Column(
             mainAxisAlignment: MainAxisAlignment.end,
             children: [
               Padding(
                 padding: const EdgeInsets.all(20),
                 child: SizedBox(
-                  height: MediaQuery.of(context).size.height * 0.35,
-                  width: MediaQuery.of(context).size.width,
+                  height: size.height * 0.35,
+                  width: size.width,
                   child: Card(
                     shadowColor: Colors.black,
                     shape: RoundedRectangleBorder(
@@ -45,7 +46,7 @@ class ShopIntro extends StatelessWidget {
                           ),
                         ),
                         SizedBox(
-                          width: MediaQuery.of(context).size.width * 0.61,
+                          width: size.width * 0.61,
                           child: const Text(
                             "Shop your favourite toys and outfits of the Squid Game on the go!",
                             style: TextStyle(color: Colors.white),
@@ -55,7 +56,7 @@ class ShopIntro extends StatelessWidget {
                         Padding(
                           padding: const EdgeInsets.all(8.0),
                           child: SizedBox(
-                            width: MediaQuery.of(context).size.width,
+                            width: size.width,
                             child: ElevatedButton(
                               onPressed: () {
                                 Navigator.popAndPushNamed(context, "/homeShop");

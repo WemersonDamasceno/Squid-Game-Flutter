@@ -5,6 +5,7 @@ class ApresentacaoCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    var size = MediaQuery.of(context).size;
     return SizedBox(
       child: Stack(
         clipBehavior: Clip.none,
@@ -20,7 +21,7 @@ class ApresentacaoCard extends StatelessWidget {
               child: Padding(
                 padding: const EdgeInsets.all(8.0),
                 child: SizedBox(
-                  height: MediaQuery.of(context).size.height * 0.1,
+                  height: size.height * 0.1,
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
@@ -57,7 +58,7 @@ class ApresentacaoCard extends StatelessWidget {
             ),
           ),
           Positioned(
-            top: -MediaQuery.of(context).size.height * 0.108,
+            top: -size.height * 0.108,
             child: Image.asset(
               "assets/images/first_game.png",
               height: MediaQuery.of(context).size.height * 0.25,

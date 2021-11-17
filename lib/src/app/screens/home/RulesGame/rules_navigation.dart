@@ -31,12 +31,13 @@ class _RuleNavigationState extends State<RuleNavigation> {
 
   @override
   Widget build(BuildContext context) {
+    var size = MediaQuery.of(context).size;
     return Scaffold(
       body: Column(
         children: <Widget>[
           CarouselSlider(
             options: CarouselOptions(
-              height: MediaQuery.of(context).size.height * 0.922,
+              height: size.height * 0.922,
               autoPlayCurve: Curves.fastOutSlowIn,
               viewportFraction: 1.1,
               onPageChanged: (index, reason) {

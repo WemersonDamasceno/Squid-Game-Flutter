@@ -27,6 +27,7 @@ class _SplashPageState extends State<SplashPage> {
 
   @override
   Widget build(BuildContext context) {
+    var size = MediaQuery.of(context).size;
     return Scaffold(
       body: Container(
         color: const Color(0xFF191919),
@@ -36,8 +37,8 @@ class _SplashPageState extends State<SplashPage> {
               image: AssetImage("assets/images/triangulo.png"),
             ),
           ),
-          width: double.infinity,
-          height: double.infinity,
+          width: size.width,
+          height: size.height,
           child: Column(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [

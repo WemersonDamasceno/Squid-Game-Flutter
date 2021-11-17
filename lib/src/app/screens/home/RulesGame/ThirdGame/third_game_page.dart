@@ -9,6 +9,7 @@ class ThirdGame extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    var size = MediaQuery.of(context).size;
     return Column(
       children: [
         Container(
@@ -20,8 +21,8 @@ class ThirdGame extends StatelessWidget {
               ),
             ),
           ),
-          width: MediaQuery.of(context).size.width * 1,
-          height: MediaQuery.of(context).size.height * 0.35,
+          width: size.width * 1,
+          height: size.height * 0.35,
           child: Padding(
             padding: const EdgeInsets.only(left: 40, right: 40, top: 60),
             child: Column(
@@ -45,7 +46,7 @@ class ThirdGame extends StatelessWidget {
             Positioned(
               top: -70,
               child: Container(
-                width: MediaQuery.of(context).size.width * 1,
+                width: size.width * 1,
                 decoration: const BoxDecoration(
                   color: Colors.white,
                   borderRadius: BorderRadius.only(
@@ -78,8 +79,7 @@ class ThirdGame extends StatelessWidget {
                         messageCard: "The team that loses will be  eliminated.",
                       ),
                       Padding(
-                        padding: EdgeInsets.only(
-                            top: MediaQuery.of(context).size.height * 0.1),
+                        padding: EdgeInsets.only(top: size.height * 0.1),
                         child: Image.asset("assets/images/swap.png",
                             color: RoundColor.primary),
                       ),
