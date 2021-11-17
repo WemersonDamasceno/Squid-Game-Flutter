@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:squid_game_flutter/src/app/screens/home/Shop/home/home_shop_page.dart';
 
 class ShopIntro extends StatelessWidget {
   const ShopIntro({Key? key}) : super(key: key);
@@ -59,10 +58,7 @@ class ShopIntro extends StatelessWidget {
                             width: MediaQuery.of(context).size.width,
                             child: ElevatedButton(
                               onPressed: () {
-                                Navigator.push(
-                                    context,
-                                    MaterialPageRoute(
-                                        builder: (_) => const HomeShopPage()));
+                                Navigator.popAndPushNamed(context, "/homeShop");
                               },
                               style: ElevatedButton.styleFrom(
                                   shape: RoundedRectangleBorder(

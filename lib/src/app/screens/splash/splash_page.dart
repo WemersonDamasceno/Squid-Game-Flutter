@@ -16,7 +16,7 @@ class _SplashPageState extends State<SplashPage> {
   }
 
   void navigationPage() {
-    Navigator.popAndPushNamed(context, "/homeShop");
+    Navigator.popAndPushNamed(context, "/home");
   }
 
   @override

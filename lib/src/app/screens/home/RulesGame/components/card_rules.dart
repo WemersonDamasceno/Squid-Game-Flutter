@@ -14,11 +14,12 @@ class CardRules extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    var size = MediaQuery.of(context).size;
     return Padding(
       padding: const EdgeInsets.only(top: 8.0),
       child: SizedBox(
         height: 80,
-        width: MediaQuery.of(context).size.width * 0.9,
+        width: size.width * 0.9,
         child: Card(
           shadowColor: Colors.black,
           elevation: 10,
@@ -28,12 +29,12 @@ class CardRules extends StatelessWidget {
             child: Row(children: [
               Image.asset(
                 imageAsset,
-                width: MediaQuery.of(context).size.width * 0.09,
+                width: size.width * 0.09,
               ),
               Padding(
                 padding: const EdgeInsets.all(8.0),
                 child: SizedBox(
-                  width: MediaQuery.of(context).size.width * 0.61,
+                  width: size.width * 0.61,
                   height: 50,
                   child: Text(
                     messageCard,

@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class CustomAppBar extends StatelessWidget {
   const CustomAppBar({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
+    var size = MediaQuery.of(context).size;
     return SafeArea(
       child: Container(
         padding: const EdgeInsets.symmetric(horizontal: 10),
@@ -26,20 +28,28 @@ class CustomAppBar extends StatelessWidget {
                   borderRadius: BorderRadius.circular(20),
                 ),
                 height: 60,
-                width: MediaQuery.of(context).size.width * 0.5,
+                width: size.width * 0.5,
                 child: Padding(
                   padding: EdgeInsets.only(
-                    left: MediaQuery.of(context).size.height * 0.015,
-                    bottom: MediaQuery.of(context).size.height * 0.015,
+                    left: size.height * 0.015,
+                    bottom: size.height * 0.015,
                   ),
-                  child: const TextField(
+                  child: TextField(
                     decoration: InputDecoration(
-                      hintText: 'Search',
-                      hintStyle: TextStyle(
-                        fontSize: 14,
+                      contentPadding: EdgeInsets.only(
+                        top: size.height * 0.03,
+                        left: size.width * 0.01,
                       ),
+                      hintText: 'Search',
+                      hintStyle: GoogleFonts.poppins(
+                          fontSize: 15, fontWeight: FontWeight.bold),
                       border: InputBorder.none,
-                      suffixIcon: Icon(Icons.search),
+                      suffixIcon: const Padding(
+                        padding: EdgeInsets.only(top: 10, right: 5),
+                        child: Icon(
+                          Icons.search,
+                        ),
+                      ),
                     ),
                   ),
                 ),
