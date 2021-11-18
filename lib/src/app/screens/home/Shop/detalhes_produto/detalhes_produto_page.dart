@@ -40,7 +40,7 @@ class DetalhesProduto extends StatelessWidget {
                   tag: produto.pathImage,
                   child: Image.asset(
                     produto.pathImage,
-                    height: size.height * 0.48,
+                    height: size.height * 0.55,
                   ),
                 ),
               ),

@@ -31,6 +31,12 @@ class CustomCardItem extends StatelessWidget {
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.end,
                 children: [
+                  Text(
+                    "Squid Game",
+                    style: GoogleFonts.poppins(
+                        fontSize: 14, fontWeight: FontWeight.bold),
+                    textAlign: TextAlign.center,
+                  ),
                   Padding(
                     padding: const EdgeInsets.only(left: 8.0, right: 8.0),
                     child: Row(
@@ -76,14 +82,15 @@ class CustomCardItem extends StatelessWidget {
           ),
         ),
         Positioned(
-          top: -size.height * 0.02,
-          right: size.width * 0.001,
+          top: 0,
+          right: 0,
+          left: 0,
           child: Hero(
             tag: pathImg,
             child: Image.asset(
               pathImg,
               width: size.width * 0.45,
-              height: size.width * 0.8,
+              height: size.width * 0.7,
             ),
           ),
         ),

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:squid_game_flutter/src/app/core/colors.dart';
+import 'package:squid_game_flutter/src/app/screens/home/Faturamento/faturamento_page.dart';
 import 'package:squid_game_flutter/src/app/screens/home/Shop/home/pages/home/home_shop_page.dart';
 
 import 'RulesGame/rules_navigation.dart';
@@ -14,15 +15,10 @@ class Home extends StatefulWidget {
 class _HomeState extends State<Home> {
   int _selectedIndex = 0;
 
-  static const TextStyle optionStyle =
-      TextStyle(fontSize: 30, fontWeight: FontWeight.bold);
   static const List<Widget> _widgetOptions = <Widget>[
     RuleNavigation(),
     HomeShopPage(),
-    Text(
-      'Index 2: School',
-      style: optionStyle,
-    ),
+    Faturamento(),
   ];
 
   void _onItemTapped(int index) {
