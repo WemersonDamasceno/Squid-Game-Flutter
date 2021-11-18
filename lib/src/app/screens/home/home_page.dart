@@ -50,7 +50,7 @@ class _HomeState extends State<Home> {
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.bar_chart_rounded),
-            label: 'Faturamento',
+            label: 'Estatísticas',
           ),
         ],
         currentIndex: _selectedIndex,
