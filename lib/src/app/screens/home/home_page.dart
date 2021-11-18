@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:squid_game_flutter/src/app/core/colors.dart';
-import 'package:squid_game_flutter/src/app/screens/home/Shop/home/home_shop_page.dart';
+import 'package:squid_game_flutter/src/app/screens/home/Shop/home/pages/home/home_shop_page.dart';
 
 import 'RulesGame/rules_navigation.dart';
 

@@ -43,6 +43,7 @@ class _SplashPageState extends State<SplashPage> {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               Column(
+                mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Image.asset(
                     "assets/images/logo.png",
@@ -52,8 +53,13 @@ class _SplashPageState extends State<SplashPage> {
               ),
               Column(
                 children: [
-                  Image.asset(
-                    "assets/images/soldado.png",
+                  SizedBox(
+                    width: size.width,
+                    child: Center(
+                      child: Image.asset(
+                        "assets/images/soldado.png",
+                      ),
+                    ),
                   ),
                 ],
               ),

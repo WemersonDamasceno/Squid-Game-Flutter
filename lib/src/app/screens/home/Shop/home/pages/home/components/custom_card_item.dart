@@ -4,9 +4,13 @@ import 'package:google_fonts/google_fonts.dart';
 class CustomCardItem extends StatelessWidget {
   final String pathImg;
   final String nameItem;
-  const CustomCardItem(
-      {Key? key, required this.pathImg, required this.nameItem})
-      : super(key: key);
+  final Function() onPress;
+  const CustomCardItem({
+    Key? key,
+    required this.pathImg,
+    required this.nameItem,
+    required this.onPress,
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -56,7 +60,7 @@ class CustomCardItem extends StatelessWidget {
                     child: SizedBox(
                       width: MediaQuery.of(context).size.width * 0.42,
                       child: ElevatedButton(
-                        onPressed: () {},
+                        onPressed: onPress,
                         child: Text(
                           "View details",
                           style: GoogleFonts.poppins(
@@ -74,10 +78,13 @@ class CustomCardItem extends StatelessWidget {
         Positioned(
           top: -size.height * 0.02,
           right: size.width * 0.001,
-          child: Image.asset(
-            pathImg,
-            width: size.width * 0.45,
-            height: size.width * 0.8,
+          child: Hero(
+            tag: pathImg,
+            child: Image.asset(
+              pathImg,
+              width: size.width * 0.45,
+              height: size.width * 0.8,
+            ),
           ),
         ),
       ],
