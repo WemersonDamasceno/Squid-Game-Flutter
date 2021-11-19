@@ -13,9 +13,9 @@
 
 ---
 
-# Telas até o momento
+# Telas implementadas
 
 
-<img src="https://user-images.githubusercontent.com/37156004/140779249-7420be2a-f50b-4201-a16a-f9f42d961876.png" width="220"/> <img src="https://user-images.githubusercontent.com/37156004/140779258-75a4a28a-a6ad-4281-8fa5-d2e2fbd4629a.png" width="220"/> <img src="https://user-images.githubusercontent.com/37156004/141501088-9a758429-332e-49b9-8ffe-f91b7138bd5e.png" width="220"/> <img src="https://user-images.githubusercontent.com/37156004/141516287-8e2f85b0-066a-4dd9-938e-d52c9084896f.png" width="220"/>
+<img src="https://user-images.githubusercontent.com/37156004/142641696-99fefbda-6f7c-4549-8bc7-d4178eeb1cb7.gif" width="450"/> <img src="https://user-images.githubusercontent.com/37156004/142641701-3590a0b0-7aeb-48b0-ac01-dae0333c13ca.gif" width="450"/>
 ---
 Made with :heart: and Flutter.
